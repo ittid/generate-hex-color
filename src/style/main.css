@@ -1,0 +1,68 @@
+/*
+  normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+*/
+@import url("normalize.css");
+/* 
+  Google Font:
+  Martel Sans for Headers && Source Serif Pro for block of text
+*/
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&family=Source+Serif+Pro:wght@400;600&display=swap");
+/*
+  Css Variable & container adjust
+  FOR TEXT    :: font-family: "Source Serif Pro", serif;
+  FOR HEADING :: font-family: "Martel Sans", sans-serif;
+*/
+:root {
+  --mainColor: #292929;
+  --paddingRight: 15px;
+  --paddingLeft: 15px;
+  --container-max-widths: 1140px;
+}
+.container {
+  width: var(--container-max-widths);
+  padding-right: var(--paddingRight);
+  padding-left: var(--paddingLeft);
+  margin-right: auto;
+  margin-left: auto;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+/*
+  Box Sizing for CSS box model
+*/
+* {
+  box-sizing: border-box;
+}
+/*
+  Typography
+*/
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: normal;
+  color: var(--mainColor);
+}
+/*
+  Element Stylesheet 
+*/
+.lead {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: inherit;
+}
+.lead {
+  text-align: center;
+}
+.lead h1 {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 42px;
+  margin-bottom: 0;
+}
+.lead h2 {
+  font-family: "Source Serif Pro", serif;
+}
